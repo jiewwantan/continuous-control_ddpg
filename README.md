@@ -50,12 +50,17 @@ Run the following to create drlnd kernel in ipython so that the right unity envi
 
 ```python -m ipykernel install --user --name drlnd --display-name "drlnd"```
 
+Pytorch can be installed with the commands recommended in https://pytorch.org/ for the respective OS. Fo example for Conda package installling into a Windows environment with Python 3.6 is: 
+'''
+conda install pytorch -c pytorch
+'''
+
 ## Getting Started
 
 Place <mark>report.ipynb</mark> in the folder <mark>p1_navigation/</mark> together with the following two files:
 
 1. ddpg_agent.py - contains the DDPG agent code. 
-2. model.py - contains Actor and Critic neural network module class
+2. model.py - contains Actor and Critic neural network modules classes
 
 The Unity Reacher environment can be downloaded from here: 
 
@@ -65,11 +70,11 @@ The Unity Reacher environment can be downloaded from here:
         - Windows (32-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/one_agent/Reacher_Windows_x86.zip)
         - Windows (64-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/one_agent/Reacher_Windows_x86_64.zip)
 
-    - **_Version 2: Twenty (20) Agents_**
-        - Linux: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher_Linux.zip)
-        - Mac OSX: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher.app.zip)
-        - Windows (32-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher_Windows_x86.zip)
-        - Windows (64-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher_Windows_x86_64.zip)
+- **_Version 2: Twenty (20) Agents_**
+	- Linux: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher_Linux.zip)
+	- Mac OSX: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher.app.zip)
+	- Windows (32-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher_Windows_x86.zip)
+	- Windows (64-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher_Windows_x86_64.zip)
 
 Choose the environment suitable for your machine. Unzipping will create another Reacher_XXX folder. For example, if the Reacher Windows environment is downloaded, ```Reacher_Windows_x86_64``` will be created. 
 
