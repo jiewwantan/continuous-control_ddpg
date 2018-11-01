@@ -67,6 +67,7 @@ class Agents():
     def act(self, states, add_noise=True):
         """Returns actions for given state as per current policy."""
         states = torch.from_numpy(states).float().to(device)
+        # Create a matrix for multi-agents' actions
         actions = np.zeros((self.num_agents, self.action_size))
         self.actor_local.eval()
         with torch.no_grad():
